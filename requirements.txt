@@ -1,0 +1,16 @@
+# backend/requirements.txt
+fastapi
+uvicorn[standard]
+asyncpg
+pydantic
+pydantic-settings
+python-dotenv
+firebase-admin
+sentry-sdk[fastapi]
+slowapi
+email-validator # Required by pydantic's EmailStr
+
+# For testing (optional but recommended)
+pytest
+httpx
+pytest-asyncio

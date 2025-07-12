@@ -1,0 +1,18 @@
+# ~/sesame-api/docker-compose.yml
+version: '3.8'
+
+services:
+  test-db:
+    image: postgres:15
+    container_name: sesame-test-db
+    environment:
+      POSTGRES_DB: defaultdb_test
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_test_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_test_data:

@@ -1,0 +1,43 @@
+# --- Python / FastAPI ------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.so
+*.egg-info/
+dist/
+build/
+
+# --- Virtual-envs ----------------------------------------------------
+venv/
+.env/              # dir used by `pipenv`, poetry, etc.
+
+# --- Config & secrets -----------------------------------------------
+*.env              # .env files holding secrets
+*.toml             # if you store secrets in pyproject extras
+*.pem
+*.key
+*.p12
+*.json             # e.g. Firebase service-account key
+app/core/__pycache__/
+
+# --- IDEs ------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+
+# --- OS clutter ------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# env / secrets
+.env
+*.env
+service-account.json
+certs/*.crt
+
+# runtime artifacts
+nohup.out
+test_results.log
+
+
