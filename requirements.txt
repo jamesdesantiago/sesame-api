@@ -14,3 +14,4 @@ email-validator # Required by pydantic's EmailStr
 pytest
 httpx
 pytest-asyncio
+PyYAML==6.0
